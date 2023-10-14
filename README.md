@@ -17,6 +17,14 @@ Este repositório contém:
 
 Nosso objetivo é promover o compartilhamento de conhecimento, capacitando os interessados a aprender sobre tópicos relacionados à engenharia, hardware e tecnologia. Acreditamos na importância da educação acessível e de qualidade, e é por isso que disponibilizamos esse conteúdo abertamente.
 
+## Explore Nossos Cursos
+
+Deseja mergulhar nos tópicos fascinantes que abordamos em nossos cursos? Não espere mais! Clique nas pastas abaixo para acessar materiais detalhados de cada curso:
+
+- [Curso de Prototipagem](./Cursos/Prototipagem)
+
+Dê o primeiro passo em direção ao aprendizado e à inovação explorando nossos cursos. A jornada começa aqui! 
+
 ## Como Contribuir
 
 Se você deseja contribuir para este repositório ou sugerir melhorias, fique à vontade para entrar em contato e sugerir alterações. A sua colaboração é valorizada e ajudará a enriquecer o material disponível aqui.
