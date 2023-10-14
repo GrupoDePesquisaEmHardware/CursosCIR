@@ -27,7 +27,7 @@ Este circuito serve como uma base sólida para o aprendizado, preparando os part
 
 Para uma visão detalhada da conexão dos componentes, consulte o diagrama esquemático a seguir:
 
-![Diagrama Esquemático]([URL_do_Diagrama_Esquemático](https://github.com/GrupoDePesquisaEmHardware/Cursos/assets/35488608/bd0861fb-3be3-40e0-a0a7-84f8310379ae))
+![Diagrama Esquemático](https://github.com/GrupoDePesquisaEmHardware/Cursos/assets/35488608/bd0861fb-3be3-40e0-a0a7-84f8310379ae)
 
 ## Instruções de Uso
 
