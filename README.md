@@ -21,7 +21,7 @@ Nosso objetivo é promover o compartilhamento de conhecimento, capacitando os in
 
 Deseja mergulhar nos tópicos fascinantes que abordamos em nossos cursos? Não espere mais! Clique nas pastas abaixo para acessar materiais detalhados de cada curso:
 
-- [Curso de Prototipagem](./Cursos/Prototipagem)
+- [Curso de Prototipagem](./Prototipagem)
 
 Dê o primeiro passo em direção ao aprendizado e à inovação explorando nossos cursos. A jornada começa aqui! 
 
