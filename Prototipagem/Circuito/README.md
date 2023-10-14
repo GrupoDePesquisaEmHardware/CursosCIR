@@ -1,4 +1,4 @@
-![Circuito em 3D](URL_da_Imagem)
+![Circuito em 3D](https://github.com/GrupoDePesquisaEmHardware/Cursos/assets/35488608/d3806af6-5879-44bf-a339-829744c93c11)
 
 # Circuito de Exemplo - Acionamento de LEDs com Botões
 
@@ -27,7 +27,7 @@ Este circuito serve como uma base sólida para o aprendizado, preparando os part
 
 Para uma visão detalhada da conexão dos componentes, consulte o diagrama esquemático a seguir:
 
-![Diagrama Esquemático](URL_do_Diagrama_Esquemático)
+![Diagrama Esquemático]([URL_do_Diagrama_Esquemático](https://github.com/GrupoDePesquisaEmHardware/Cursos/assets/35488608/bd0861fb-3be3-40e0-a0a7-84f8310379ae))
 
 ## Instruções de Uso
 
@@ -35,3 +35,4 @@ Para uma visão detalhada da conexão dos componentes, consulte o diagrama esque
 2. Pressione os botões para ligar ou desligar os LEDs conforme desejado.
 
 Este circuito de exemplo fornece uma introdução prática ao acionamento de LEDs com botões e resistores de pull-up/pull-down. Os participantes do curso podem explorar o funcionamento e a montagem deste circuito para adquirir experiência prática.
+
