@@ -72,8 +72,10 @@ Nos dias 2 e 3 do curso de prototipagem, os participantes terão a oportunidade 
 
 ## Instrutores
 
-- Otávio A. C. Barbosa
-- Francisco P. S. Neto
+- [Otávio A. C. Barbosa](https://github.com/otavioacb)
+
+- [Francisco P. S. Neto](https://github.com/paivaneto8190)
+
 
 Esperamos que você aproveite esta jornada de aprendizado e prototipagem. Se tiver alguma dúvida ou precisar de mais informações, entre em contato conosco.
 
