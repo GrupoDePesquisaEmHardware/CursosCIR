@@ -30,7 +30,7 @@ No primeiro e segundo dia, os participantes aprenderão a criar designs de PCB u
 - Configuração dos parâmetros para o projeto.
   - Explicação do significado dos pontos mais importantes a serem considerados.
   - Definir os tamanhos adequados das trilhas e pads.
-### Dia 2:
+#### Dia 2:
 - Desenhar a placa de circuito.
   - Construção do circuito no EasyEDA.
   - Editar o layout.
@@ -84,7 +84,7 @@ No quarto e quinto dia do curso de prototipagem, os participantes irão aprender
 - Desenvolver um projeto funcional para levar para casa
 - Saber exportar os arquivos para impressão
 
-### Dia 4:
+#### Dia 4:
   - Apresentação da oficina e dos participantes
   - Visão geral do OnShape
     - Explicação das ferramentas
@@ -96,7 +96,7 @@ No quarto e quinto dia do curso de prototipagem, os participantes irão aprender
     - Explicar como desenhar uma figura
     - Explicar como dimensionar a figura
     - Diferenciar as vistas dos planos
-### Dia 5:
+#### Dia 5:
   - Desenhando a case
     - Construir a base da case
     - Construir a tampa da case
