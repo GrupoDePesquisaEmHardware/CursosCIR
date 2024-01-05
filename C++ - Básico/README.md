@@ -15,7 +15,7 @@ O Curso de C++ Nível Básico é uma oportunidade para dar o pontapé inicial no
 
 O curso é dividido em 6 aulas, com cada dia composto por uma parte teórica e prática. Onde, durante esses dias o aluno será preparado para desenvolver um projeto final. Os tópicos abordados no curso são:
 
-### Dia 1:
+#### Dia 1:
   - Introdução a algoritmos
     - O que são algoritmos ?
     - Onde podemos encontrar os mesmo?
@@ -30,7 +30,7 @@ O curso é dividido em 6 aulas, com cada dia composto por uma parte teórica e p
     - O que é o C/C++ ?
     - Quais as suas aplicações?
 
-### Dia 2:
+#### Dia 2:
   - Introdução de C++
     - Apresentando a sintaxe do C++
     - Mostrando comandos básicos do C++
@@ -48,7 +48,7 @@ O curso é dividido em 6 aulas, com cada dia composto por uma parte teórica e p
     - Operações AND/OR/NOT
     - Mostrar a tabela verdade de cada operação
 
-### Dia 3:
+#### Dia 3:
   - Estruturas de repetição
     - O que é uma estrutura de repetição?
     - Explicar While e do While com exemplos específicos 
@@ -62,14 +62,14 @@ O curso é dividido em 6 aulas, com cada dia composto por uma parte teórica e p
     - Como utilizar o comando
     - Utilizando o mesmo
 
-### Dia 4:
+#### Dia 4:
   - Arrays no C++
     - Como utilizar Arrays
     - Tipos de Arrays
     - Strings
     - Matrizes
 
-### Dia 5:
+#### Dia 5:
   - Introdução a funções
     - Para que servem funções
     - Tipagem de funções
@@ -79,7 +79,7 @@ O curso é dividido em 6 aulas, com cada dia composto por uma parte teórica e p
     - Como utilizar bibliotecas
     - Exemplos de funções de bibliotecas como Cmath
 
-### Dia 6:
+#### Dia 6:
   - Elaboração do projeto
     - Mostrar as competências que o projeto tem que ter
     - Dúvidas a respeito do projeto
