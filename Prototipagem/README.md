@@ -86,7 +86,7 @@ No quarto e quinto dia do curso de prototipagem, os participantes irão aprender
 
 #### Dia 4:
   - Apresentação da oficina e dos participantes
-  - Visão geral do OnShape
+  - Visão geral do Fusion360
     - Explicação das ferramentas
     - Explicar como criar um projeto
   - Examinando janelas do software
@@ -105,8 +105,8 @@ No quarto e quinto dia do curso de prototipagem, os participantes irão aprender
   - Finalização da placa
     - Ensinar a juntar as partes
     - Organizar a árvore de projeto
-- Exportar o projeto para impressão
-- 
+  - Exportar o projeto para impressão
+
 ## Instrutores
 
 - [Otávio A. C. Barbosa](https://github.com/otavioacb)
