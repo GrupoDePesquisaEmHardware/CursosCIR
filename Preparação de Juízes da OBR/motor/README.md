@@ -2,7 +2,9 @@
 ## Introdução
 O controle de motores DC (corrente contínua) usando um Arduino é uma prática comum em projetos de automação e robótica. Este documento fornece uma visão geral do comportamento de motores DC quando controlados por um Arduino, incluindo suas limitações e zonas de funcionamento.
 
-(Colocar uma imagem do motor Dc)
+<div align = "center">
+  <img src="https://github.com/Valdemar-Neto/Code-Recognition-color-/assets/108936921/c5f6112b-f8a3-468c-8cee-bd2483b4fc78" width = 250px height= 250px>  
+</div>
 
 # Materiais Necessários
 - Arduino (Uno, Mega, etc.)
@@ -17,14 +19,19 @@ Um motor DC converte energia elétrica em energia mecânica, permitindo o movime
 ### Controle com Arduino
 O Arduino, sendo um microcontrolador, pode enviar sinais digitais e PWM (Pulse Width Modulation) para um driver de motor, que por sua vez controla o motor DC. O PWM é usado para ajustar a velocidade do motor ao variar a largura dos pulsos da tensão fornecida. Além disso, as configuraações, para comunicação com o microcontrolador, serão estabelecidas a partir dos pinos digitais do arduino.
 
-(Colocar uma imagem se referenciando os pinos digitais)
+<div align = "center">
+  <img src="https://github.com/Valdemar-Neto/Code-Recognition-color-/assets/108936921/502962f1-00c0-4801-bcb4-262caa19ee09" width = 50%>  
+</div>
 
 ### Ponte H
 **O que é uma Ponte H?**
 
 Uma ponte H é um circuito eletrônico que permite que a tensão seja aplicada através de uma carga em qualquer direção. No contexto de controle de motores, a ponte H é essencial para controlar a direção do motor DC. Utilizando transistores ou outros componentes de comutação, a ponte H pode inverter a polaridade da tensão aplicada ao motor, permitindo que ele gire tanto no sentido horário quanto anti-horário.
 
-(Colocar uma imagem de uma ponte H)
+<div align = "center">
+  <img src="https://github.com/Valdemar-Neto/Code-Recognition-color-/assets/108936921/f55be084-a234-440e-9960-81aac3ff93b8" width = 250px height= 250px>  
+</div>
+
 
 **Importância da Ponte H no Controle de Direção**
 
