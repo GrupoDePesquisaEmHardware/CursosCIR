@@ -80,8 +80,8 @@ void loop() {
 
 ### Funções Presentes no Código
 
-- ```**#define**``` : Define constantes para respectivos pinos do arduino, no caso, os pinos digitais com saídas pwm;
-- ```**Variáveis globais**``` : As variáveis globais definem parâmetros que podem receber outros valores durante a operação. No caso, as contantes:
+- ```#define``` : Define constantes para respectivos pinos do arduino, no caso, os pinos digitais com saídas pwm;
+- ```Variáveis globais``` : As variáveis globais definem parâmetros que podem receber outros valores durante a operação. No caso, as contantes:
   - PinSensor
   - LINHA
 - **Void Setup()**: Chamada uma única vez quando o Arduino é ligado. Esta função inicializa a comunicação serial e configura os pinos com saídas.
