@@ -89,7 +89,6 @@ void loop() {
       - Baudrate: é a taxa de tranmissão de dados em bits por segundos (bps). Os valores mais comuns de baudrate são: 9660, 14400, 19200, 38400, 57600 ente outros.
 - **Void Loop()**: Função chamada repetidas vezes e contém a lógica principal para o controle dos motores.
     - ```digitalWrite(pin, estado)```: Essa função é usada para controlar pinos digitais no Arduino. Ela define o estado de um pino como HIGH (5V) ou LOW (0V);
-    - ```analogWrite(pin, valor)```: Essa função é usada para pinos de modulação por largura de pulso (PWM). Ela gera saídas semelhantes a analógicas com intensidade variável.
     - ```delay(ms)```: Essa função é usada para pausar a execução do programa por um período de tempo determinado, especificado em milissegundos (ms).
 
 
