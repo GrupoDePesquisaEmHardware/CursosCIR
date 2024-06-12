@@ -74,5 +74,19 @@ void loop() {
 }
 ```
 
+### Funções Presentes no Código
+
+- ```**#define**``` : Define constantes para respectivos pinos do arduino, no caso, os pinos digitais com saídas pwm;
+- ```**Variáveis globais**``` : As variáveis globais definem parâmetros que podem receber outros valores durante a operação. No caso, as contantes:
+  - Velocidade:  Define a velocidaide principal dos motores;
+  - Vel: Define uma segunda velocidade para operações de mudança de direção;
+  - Temp: Define o tempo em milissegundos entre cada ação.
+- **Void Setup()**: Chamada uma única vez quando o Arduino é ligado. Esta função inicializa a comunicação serial e configura os pinos com saídas.
+  - ```Serial.begin(baudrate)```: inicializa a comunicação serial entre o Arduino e o computador ou qualquer outro dispositivo serial na qual permite o envio e recebimento de dados através da porta serial.
+      - Baudrate: é a taxa de tranmissão de dados em bits por segundos (bps). Os valores mais comuns de baudrate são: 9660, 14400, 19200, 38400, 57600 ente outros.
+- **Void Loop()**: Função chamada repetidas vezes e contém a lógica principal para o controle dos motores.
+    - ```digitalWrite(pin, estado)```: Essa função é usada para controlar pinos digitais no Arduino. Ela define o estado de um pino como HIGH (5V) ou LOW (0V);
+    - ```analogWrite(pin, valor)```: Essa função é usada para pinos de modulação por largura de pulso (PWM). Ela gera saídas semelhantes a analógicas com intensidade variável.
+    - ```delay(ms)```: Essa função é usada para pausar a execução do programa por um período de tempo determinado, especificado em milissegundos (ms).
 
 
