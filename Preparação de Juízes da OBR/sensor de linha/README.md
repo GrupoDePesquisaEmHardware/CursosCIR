@@ -82,9 +82,8 @@ void loop() {
 
 - ```**#define**``` : Define constantes para respectivos pinos do arduino, no caso, os pinos digitais com saídas pwm;
 - ```**Variáveis globais**``` : As variáveis globais definem parâmetros que podem receber outros valores durante a operação. No caso, as contantes:
-  - Velocidade:  Define a velocidaide principal dos motores;
-  - Vel: Define uma segunda velocidade para operações de mudança de direção;
-  - Temp: Define o tempo em milissegundos entre cada ação.
+  - PinSensor
+  - LINHA
 - **Void Setup()**: Chamada uma única vez quando o Arduino é ligado. Esta função inicializa a comunicação serial e configura os pinos com saídas.
   - ```Serial.begin(baudrate)```: inicializa a comunicação serial entre o Arduino e o computador ou qualquer outro dispositivo serial na qual permite o envio e recebimento de dados através da porta serial.
       - Baudrate: é a taxa de tranmissão de dados em bits por segundos (bps). Os valores mais comuns de baudrate são: 9660, 14400, 19200, 38400, 57600 ente outros.
