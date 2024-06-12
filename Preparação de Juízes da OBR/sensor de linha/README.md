@@ -45,3 +45,34 @@ Para operar corretamente, o sensor QRE1113 tem os seguintes requisitos:
 - **Coletor do Fototransistor (C)**: Conectado à entrada do microcontrolador ou circuito de leitura.
 - **Emissor do Fototransistor (E)**: Conectado ao terra (GND).
 
+
+### Exemplo de código 
+```
+#define pinSensor 4
+#define LINHA HIGH
+
+void setup() {
+  Serial.begin (9600);
+
+  pinMode(pinSensor, INPUT);
+
+}
+
+void loop() {
+
+  bool val = digitalRead(pinSensor);
+
+  if (val== 1)
+  {
+     Serial.println("branco");
+  } 
+  else 
+  {
+     Serial.println("preto");
+  }
+  delay(1000);
+}
+```
+
+
+
