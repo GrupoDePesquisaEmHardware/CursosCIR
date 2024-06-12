@@ -4,6 +4,10 @@
 
 Neste repositório, será apresentado um dos componentes mais importante para a finalidade desse curso, que é o sensor de linha. O QRE1113 é um sensor de reflexão infravermelho (IR) utilizado principalmente para detectar a presença de objetos próximos ou para seguir linhas em projetos de robótica. Ele é composto por um LED infravermelho e um fototransistor, ambos montados em uma única unidade. Quando o LED emite luz IR, qualquer objeto ou superfície refletiva em frente ao sensor irá refletir essa luz de volta para o fototransistor, que então produz um sinal elétrico correspondente.
 
+<div align = "center">
+  <img src="https://github.com/Valdemar-Neto/Valdemar-Neto/assets/108936921/2f02c404-8ac1-49fa-a688-6ef2175379d7" width = 250px height= 250px>  
+</div>
+
 ## Funcionamento
 
 O QRE1113 funciona emitindo luz infravermelha através de seu LED. A luz infravermelha é então refletida por uma superfície ou objeto próximo. O fototransistor detecta essa luz refletida e, dependendo da intensidade da reflexão, o sensor gera uma corrente elétrica que pode ser lida por um microcontrolador ou outro circuito de leitura. Você pode acessar o DataSheet desse sensor [nesse link](https://octopart.com/datasheet/qre1113-onsemi-84331128?msclkid=2bd3f66cff771a7483e6900560e049ed&utm_source=bing&utm_medium=cpc&utm_campaign=b_cpc_latam-br_search_dsa_english_en_usd_all-categories&utm_term=semiconductors&utm_content=Discrete%20Semiconductors%20DSA)
