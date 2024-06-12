@@ -1,8 +1,8 @@
 # Sensor QRE1113
 
-## Visão Geral
+## Introdução
 
-O QRE1113 é um sensor de reflexão infravermelho (IR) utilizado principalmente para detectar a presença de objetos próximos ou para seguir linhas em projetos de robótica. Ele é composto por um LED infravermelho e um fototransistor, ambos montados em uma única unidade. Quando o LED emite luz IR, qualquer objeto ou superfície refletiva em frente ao sensor irá refletir essa luz de volta para o fototransistor, que então produz um sinal elétrico correspondente.
+Neste repositório, será apresentado um dos componentes mais importante para a finalidade desse curso, que é o sensor de linha. O QRE1113 é um sensor de reflexão infravermelho (IR) utilizado principalmente para detectar a presença de objetos próximos ou para seguir linhas em projetos de robótica. Ele é composto por um LED infravermelho e um fototransistor, ambos montados em uma única unidade. Quando o LED emite luz IR, qualquer objeto ou superfície refletiva em frente ao sensor irá refletir essa luz de volta para o fototransistor, que então produz um sinal elétrico correspondente.
 
 ## Funcionamento
 
@@ -45,7 +45,3 @@ Para operar corretamente, o sensor QRE1113 tem os seguintes requisitos:
 - **Coletor do Fototransistor (C)**: Conectado à entrada do microcontrolador ou circuito de leitura.
 - **Emissor do Fototransistor (E)**: Conectado ao terra (GND).
 
-### Componentes Adicionais
-
-- **Resistor Limitador de Corrente para o LED**: Para evitar sobrecarga do LED infravermelho.
-- **Resistor Pull-down para o Fototransistor**: Para estabilizar o sinal de saída e evitar leituras errôneas.
