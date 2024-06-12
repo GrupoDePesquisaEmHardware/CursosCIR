@@ -6,7 +6,7 @@ Neste repositório, será apresentado um dos componentes mais importante para a 
 
 ## Funcionamento
 
-O QRE1113 funciona emitindo luz infravermelha através de seu LED. A luz infravermelha é então refletida por uma superfície ou objeto próximo. O fototransistor detecta essa luz refletida e, dependendo da intensidade da reflexão, o sensor gera uma corrente elétrica que pode ser lida por um microcontrolador ou outro circuito de leitura.
+O QRE1113 funciona emitindo luz infravermelha através de seu LED. A luz infravermelha é então refletida por uma superfície ou objeto próximo. O fototransistor detecta essa luz refletida e, dependendo da intensidade da reflexão, o sensor gera uma corrente elétrica que pode ser lida por um microcontrolador ou outro circuito de leitura. Você pode acessar o DataSheet desse sensor [nesse link](https://octopart.com/datasheet/qre1113-onsemi-84331128?msclkid=2bd3f66cff771a7483e6900560e049ed&utm_source=bing&utm_medium=cpc&utm_campaign=b_cpc_latam-br_search_dsa_english_en_usd_all-categories&utm_term=semiconductors&utm_content=Discrete%20Semiconductors%20DSA)
 
 ### Diagrama de Funcionamento
 
