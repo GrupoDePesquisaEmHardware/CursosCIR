@@ -64,30 +64,59 @@ Onde:
 
 
 ### Exemplo de código 
-```
-#define pinSensor 4
-#define LINHA HIGH
+```cpp
+#define TRIG 11
+#define ECHO 10
+
+float distance;
+
+// Função para ler a duração do pulso ultrassônico e calcular a distância
+int ler() {
+  unsigned long timeInicio, timeDuracao;
+
+  // Emissão do pulso ultrassônico
+  digitalWrite(TRIG, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIG, LOW);
+
+  // Aguarda até o início da recepção do pulso
+  while (digitalRead(ECHO) == LOW) {}
+
+  // Marca o tempo de início da recepção do pulso
+  timeInicio = micros();
+
+  // Aguarda até o final da recepção do pulso
+  while (digitalRead(ECHO) == HIGH) {}
+
+  // Calcula a duração do pulso
+  timeDuracao = micros() - timeInicio;
+  Serial.println(timeDuracao);
+
+  // Calcula e retorna a distância em centímetros
+  return (timeDuracao / 55);
+}
 
 void setup() {
-  Serial.begin (9600);
+  Serial.begin(9600);
 
-  pinMode(pinSensor, INPUT);
+  // Configura os pinos TRIG e ECHO
+  pinMode(TRIG, OUTPUT);
+  pinMode(ECHO, INPUT);
 
+  // Garante que o pino TRIG esteja baixo inicialmente
+  digitalWrite(TRIG, LOW);
 }
 
 void loop() {
+  // Chama a função ler para obter a distância
+  distance = ler();
 
-  bool val = digitalRead(pinSensor);
+  // Imprime a distância no serial monitor
+  Serial.print("Distancia: ");
+  Serial.println(distance);
 
-  if (val== 1)
-  {
-     Serial.println("branco");
-  } 
-  else 
-  {
-     Serial.println("preto");
-  }
-  delay(1000);
+  // Aguarda 100 milissegundos antes de realizar nova leitura
+  delay(100);
 }
 ```
 ### Descrição da Função ler
@@ -114,6 +143,7 @@ A função ler é responsável por emitir um pulso ultrassônico, medir o tempo 
 - ```digitalRead(pin)```: Lê o valor lógico (HIGH ou LOW) do pino especificado.
 - ```micros()```: Retorna o número de microsegundos desde que o programa começou a ser executado.
 - ```Serial.begin(baudrate)```: Inicializa a comunicação serial com a taxa de transmissão especificada (baudrate).
+  -  `Baudrate`: é a taxa de tranmissão de dados em bits por segundos (bps). Os valores mais comuns de baudrate são: 9660, 14400, 19200, 38400, 57600 ente outros.
 - ```Serial.print(value)```: Imprime um valor na porta serial.
 - ```Serial.println(value)```: Imprime um valor na porta serial, seguido de uma nova linha.
 - ```delay(ms)```: Pausa a execução do programa pelo número especificado de milissegundos.
