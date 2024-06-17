@@ -90,19 +90,32 @@ void loop() {
   delay(1000);
 }
 ```
+### Descrição da Função ler
+A função ler é responsável por emitir um pulso ultrassônico, medir o tempo que leva para o pulso retornar e calcular a distância ao objeto. Ela realiza as seguintes etapas:
+
+1.  Emissão do Pulso Ultrassônico:
+    - Define o pino TRIG como HIGH por 10 microsegundos e depois o define como LOW. Isso gera um pulso ultrassônico.
+2. Medição do Tempo de Retorno:
+
+   - Aguarda até que o pino ECHO fique HIGH, indicando que o pulso foi enviado e está aguardando o retorno.
+   - Marca o tempo de início usando ```micros()```.
+   - Aguarda até que o pino ECHO volte a LOW, indicando que o pulso retornou.
+   - Calcula a duração do pulso como a diferença entre o tempo atual e o tempo de início.
+
+3. Cálculo da Distância:
+
+   - Converte a duração do pulso em distância, dividindo por 55 para obter a distância em centímetros. O divisor 55 é uma simplificação baseada na velocidade do som e na conversão de microsegundos para centímetros.
 
 ### Funções Presentes no Código
 
-- ```#define``` : Define constantes para respectivos pinos do arduino, no caso, os pinos digitais com saídas pwm;
-- ```Variáveis globais``` : As variáveis globais definem parâmetros que podem receber outros valores durante a operação. No caso, as contantes:
-  - PinSensor
-  - LINHA
-- **Void Setup()**: Chamada uma única vez quando o Arduino é ligado. Esta função inicializa a comunicação serial e configura os pinos com saídas.
-  - ```Serial.begin(baudrate)```: inicializa a comunicação serial entre o Arduino e o computador ou qualquer outro dispositivo serial na qual permite o envio e recebimento de dados através da porta serial.
-      - Baudrate: é a taxa de tranmissão de dados em bits por segundos (bps). Os valores mais comuns de baudrate são: 9660, 14400, 19200, 38400, 57600 ente outros.
-- **Void Loop()**: Função chamada repetidas vezes e contém a lógica principal para o controle dos motores.
-    - ```digitalWrite(pin, estado)```: Essa função é usada para controlar pinos digitais no Arduino. Ela define o estado de um pino como HIGH (5V) ou LOW (0V);
-    - ```delay(ms)```: Essa função é usada para pausar a execução do programa por um período de tempo determinado, especificado em milissegundos (ms).
-
+- ```pinMode(pin, mode)```: Configura o pino especificado como entrada (INPUT) ou saída (OUTPUT).
+- ```digitalWrite(pin, value)```: Define o nível lógico do pino especificado como HIGH (alto) ou LOW (baixo).
+- ```delayMicroseconds(us)```: Pausa a execução do programa pelo número especificado de microsegundos.
+- ```digitalRead(pin)```: Lê o valor lógico (HIGH ou LOW) do pino especificado.
+- ```micros()```: Retorna o número de microsegundos desde que o programa começou a ser executado.
+- ```Serial.begin(baudrate)```: Inicializa a comunicação serial com a taxa de transmissão especificada (baudrate).
+- ```Serial.print(value)```: Imprime um valor na porta serial.
+- ```Serial.println(value)```: Imprime um valor na porta serial, seguido de uma nova linha.
+- ```delay(ms)```: Pausa a execução do programa pelo número especificado de milissegundos.
 
 
