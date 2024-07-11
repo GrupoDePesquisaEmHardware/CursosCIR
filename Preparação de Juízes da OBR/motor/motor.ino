@@ -1,66 +1,64 @@
-#define dirFrente 9
-#define dirTras   3
-#define esqFrente 10
-#define esqTras   11
+#define AIA 3 
+#define AIB 9 
+#define BIA 10 
+#define BIB 6  
 
-int velocidade = 150;
-int vel = 120;
-int temp = 1500;
+byte speed= 255;
 
-void setup() {
-  Serial.begin (9600);
-  
-  pinMode(dirFrente,  OUTPUT);
-  pinMode(dirTras,    OUTPUT);
-  pinMode(esqFrente,  OUTPUT);
-  pinMode(esqTras,    OUTPUT);
-
-  digitalWrite(dirFrente,  LOW);
-  digitalWrite(dirTras,    LOW);
-  digitalWrite(esqFrente,  LOW);
-  digitalWrite(esqTras,    LOW);
+void setup(){
+  pinMode (AIA, OUTPUT);
+  pinMode (AIB, OUTPUT);
+  pinMode (BIA, OUTPUT);
+  pinMode (BIB, OUTPUT);
 }
 
-void loop() {
-    //Frente
-    analogWrite (esqFrente,velocidade);
-    digitalWrite(esqTras,LOW);
-    analogWrite (dirFrente,velocidade);
-    digitalWrite(dirTras,LOW);
-    delay(temp);
-
-    //Trás
-    digitalWrite(esqFrente,LOW);
-    analogWrite (esqTras,vel);
-    analogWrite (dirFrente,vel);
-    digitalWrite(dirTras, LOW);
-    delay(temp);
-
-    //Direita
-    analogWrite (esqFrente,vel);
-    digitalWrite(esqTras,LOW);
-    digitalWrite(dirFrente,LOW);
-    analogWrite (dirTras,vel);
-    delay(temp);
+void loop (){
+  //frente
+  forward_dir();
+  forward_esq();
+  delay (2000);
   
-    //Parado
-    digitalWrite(esqFrente,  HIGH);
-    digitalWrite(esqTras,    HIGH);
-    digitalWrite(dirFrente,  HIGH);
-    digitalWrite(dirTras,    HIGH);
-    delay(temp);
+  //tras
+  backward_esq();
+  backward_dir();
+  delay(2000);
 
-    //Esquerda
-    digitalWrite(esqFrente,LOW);
-    analogWrite (esqTras,velocidade);
-    digitalWrite(dirFrente,LOW);
-    analogWrite (dirTras,velocidade);
-    delay(temp);
+  //esquerda
+  backward_esq();
+  forward_dir();
+  delay(2000);
 
-    //Parado
-    digitalWrite(esqFrente,  HIGH);
-    digitalWrite(esqTras,    HIGH);
-    digitalWrite(dirFrente,  HIGH);
-    digitalWrite(dirTras,    HIGH);
-    delay(temp);
-  }
+  //direita
+  backward_dir();
+  forward_esq();
+  delay(2000);
+
+  //parar
+  desliga();
+}
+
+void backward_esq(){
+analogWrite(AIA,0);
+analogWrite(AIB,speed);
+}
+
+void backward_dir(){
+analogWrite(BIA,0);
+analogWrite(BIB,speed);
+}
+
+void forward_esq(){
+analogWrite(AIA,speed);
+analogWrite(AIB,0);
+}
+void forward_dir(){
+analogWrite(BIA,speed);
+analogWrite(BIB,0);
+}
+
+void desliga(){
+  analogWrite(BIA,0);
+  analogWrite(BIB,0);
+  analogWrite(AIA,0);
+  analogWrite(AIB,0);
+}
