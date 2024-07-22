@@ -1,24 +1,21 @@
 #define TRIG 11
 #define ECHO 10
 
-float distance;
+float distancia;
 
 int ler()
 {
-  unsigned long timeInicio, timeDuracao;
-  digitalWrite(TRIG, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(TRIG, LOW);
-  
-  while(digitalRead(ECHO) == LOW) {}
-  
-  timeInicio = micros();
-  while(digitalRead(ECHO) == HIGH) {}
-	 
-  timeDuracao = micros() - timeInicio;
-  Serial.println(timeDuracao);
+  unsigned long timeDuracao;
 	
-  return (timeDuracao/55);
+  digitalWrite(trig, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig, LOW);
+  
+  timeDuracao = pulseIn(ECHO, HIGH);
+	
+  return (timeDuracao/58);
 }
 
 
@@ -34,10 +31,10 @@ void setup()
 
 void loop()
 {
-  	distance = ler();
+  distancia = ler();
   
-  	Serial.print("Distancia: ");
-  	Serial.println(distance);
+  Serial.print("Distancia: ");
+  Serial.println(distancia);
   
-  	delay(100);
+  delay(100);
 }
