@@ -33,72 +33,93 @@ A ponte H é crucial para o controle bidirecional de motores DC. Sem ela, o moto
 
 ## Exemplo de código utilizado para o controle de motor DC
 ```
-#define dirFrente 9
-#define dirTras   3
-#define esqFrente 10
-#define esqTras   11
+#define AIA  3 
+#define AIB  9 
+#define BIA 10 
+#define BIB  6  
 
-int velocidade = 150;
-int vel = 120;
-int temp = 1500;
+int speed = 255;
+int temp = 100;
 
-void setup() {
-  Serial.begin (9600);
+void setup() 
+{
+  Serial.begin(9600);
   
-  pinMode(dirFrente,  OUTPUT);
-  pinMode(dirTras,    OUTPUT);
-  pinMode(esqFrente,  OUTPUT);
-  pinMode(esqTras,    OUTPUT);
+  pinMode(AIA, OUTPUT);
+  pinMode(AIB, OUTPUT);
+  pinMode(BIA, OUTPUT);
+  pinMode(BIB, OUTPUT);
 
-  digitalWrite(dirFrente,  LOW);
-  digitalWrite(dirTras,    LOW);
-  digitalWrite(esqFrente,  LOW);
-  digitalWrite(esqTras,    LOW);
+  stop();
 }
 
-void loop() {
-    //Frente
-    analogWrite (esqFrente,velocidade);
-    digitalWrite(esqTras,LOW);
-    analogWrite (dirFrente,velocidade);
-    digitalWrite(dirTras,LOW);
+void loop()
+{
+    forward();
     delay(temp);
 
-    //Trás
-    digitalWrite(esqFrente,LOW);
-    analogWrite (esqTras,vel);
-    analogWrite (dirFrente,vel);
-    digitalWrite(dirTras, LOW);
-    delay(temp);
-
-    //Direita
-    analogWrite (esqFrente,vel);
-    digitalWrite(esqTras,LOW);
-    digitalWrite(dirFrente,LOW);
-    analogWrite (dirTras,vel);
+    backward();
     delay(temp);
   
-    //Parado
-    digitalWrite(esqFrente,  HIGH);
-    digitalWrite(esqTras,    HIGH);
-    digitalWrite(dirFrente,  HIGH);
-    digitalWrite(dirTras,    HIGH);
+    forward_dir();
+    backward_esq();
     delay(temp);
 
-    //Esquerda
-    digitalWrite(esqFrente,LOW);
-    analogWrite (esqTras,velocidade);
-    digitalWrite(dirFrente,LOW);
-    analogWrite (dirTras,velocidade);
+    forward_esq();
+    backward_dir();
     delay(temp);
 
-    //Parado
-    digitalWrite(esqFrente,  HIGH);
-    digitalWrite(esqTras,    HIGH); 
-    digitalWrite(dirFrente,  HIGH);
-    digitalWrite(dirTras,    HIGH);
+    stop();
     delay(temp);
   }
+
+void backward()
+{
+  analogWrite(AIA, 0);
+  analogWrite(AIB, speed);
+  analogWrite(BIA, 0);
+  analogWrite(BIB, speed);
+}
+
+void forward()
+{
+  analogWrite(AIA, speed);
+  analogWrite(AIB, 0);
+  analogWrite(BIA, speed);
+  analogWrite(BIB, 0);
+}
+
+void backward_esq()
+{
+  analogWrite(AIA, 0);
+  analogWrite(AIB, speed);
+}
+
+void backward_dir()
+{
+  analogWrite(BIA, 0);
+  analogWrite(BIB, speed);
+}
+
+void forward_esq()
+{
+  analogWrite(AIA, speed);
+  analogWrite(AIB, 0);
+}
+
+void forward_dir()
+{
+  analogWrite(BIA, speed);
+  analogWrite(BIB, 0);
+}
+
+void stop()
+{
+  analogWrite(BIA, 0);
+  analogWrite(BIB, 0);
+  analogWrite(AIA, 0);
+  analogWrite(AIB, 0);
+}
 ```
 
 ## Funções Presentes no Código
